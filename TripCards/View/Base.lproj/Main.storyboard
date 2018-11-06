@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yU1-yx-17V">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tickets-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardsViewController" customModule="TripCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3Lu-s3-bSx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TicketTableViewCell" rowHeight="100" id="rrm-vp-F0S" customClass="TicketTableViewCell" customModule="TripCards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rrm-vp-F0S" id="ePa-Ec-usv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-gT-uPL">
+                                                    <rect key="frame" x="5" y="5" width="365" height="89.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="JRe-gT-uPL" secondAttribute="bottom" constant="5" id="HLi-Mf-r6a"/>
+                                                <constraint firstItem="JRe-gT-uPL" firstAttribute="leading" secondItem="ePa-Ec-usv" secondAttribute="leading" constant="5" id="Xph-gG-MUK"/>
+                                                <constraint firstAttribute="trailing" secondItem="JRe-gT-uPL" secondAttribute="trailing" constant="5" id="ZC0-W6-1Zm"/>
+                                                <constraint firstItem="JRe-gT-uPL" firstAttribute="top" secondItem="ePa-Ec-usv" secondAttribute="top" constant="5" id="kgp-se-Cnf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ticketLabel" destination="JRe-gT-uPL" id="U3G-0Q-EFG"/>
+                                            <segue destination="ajF-oB-9ND" kind="show" identifier="showDetailSegue" id="rwy-WM-7EW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Lu-s3-bSx" secondAttribute="trailing" id="2A1-M5-jua"/>
+                            <constraint firstItem="3Lu-s3-bSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ro8-sK-sN4"/>
+                            <constraint firstItem="3Lu-s3-bSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xxq-8j-F54"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Lu-s3-bSx" secondAttribute="bottom" id="xS2-kn-LGg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tickets" id="kAN-0v-23A">
+                        <barButtonItem key="rightBarButtonItem" image="bar_button_sort" id="zJc-tJ-BOe">
+                            <connections>
+                                <action selector="showJourney:" destination="BYZ-38-t0r" id="wkg-em-7nl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cardsTableView" destination="3Lu-s3-bSx" id="QBs-PJ-DjR"/>
+                        <segue destination="c9l-3G-E4g" kind="show" identifier="showJourneySegue" id="3Oo-Hf-LkD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="793"/>
+        </scene>
+        <!--Journey View Controller-->
+        <scene sceneID="Wnh-ag-Xnh">
+            <objects>
+                <viewController id="c9l-3G-E4g" customClass="JourneyViewController" customModule="TripCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="you-J8-ktN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z9L-g1-fpn">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="JourneyTableViewCell" rowHeight="97" id="bfF-B6-SF8" customClass="JourneyTableViewCell" customModule="TripCards" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bfF-B6-SF8" id="gy1-mD-Ddf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="96.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMI-WX-y6e">
+                                                    <rect key="frame" x="10" y="5" width="355" height="86.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IMI-WX-y6e" firstAttribute="top" secondItem="gy1-mD-Ddf" secondAttribute="top" constant="5" id="BIc-tk-XkO"/>
+                                                <constraint firstItem="IMI-WX-y6e" firstAttribute="leading" secondItem="gy1-mD-Ddf" secondAttribute="leading" constant="10" id="hBl-MC-FN0"/>
+                                                <constraint firstAttribute="bottom" secondItem="IMI-WX-y6e" secondAttribute="bottom" constant="5" id="u7j-un-xvB"/>
+                                                <constraint firstAttribute="trailing" secondItem="IMI-WX-y6e" secondAttribute="trailing" constant="10" id="vKa-Ky-eIP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="journeyDetailLabel" destination="IMI-WX-y6e" id="YO1-qf-Y9D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z9L-g1-fpn" firstAttribute="top" secondItem="urg-TF-Y3G" secondAttribute="top" id="KQ9-Ki-2lI"/>
+                            <constraint firstItem="z9L-g1-fpn" firstAttribute="leading" secondItem="urg-TF-Y3G" secondAttribute="leading" id="n5F-T5-dF6"/>
+                            <constraint firstItem="urg-TF-Y3G" firstAttribute="trailing" secondItem="z9L-g1-fpn" secondAttribute="trailing" id="qLl-B3-MVV"/>
+                            <constraint firstItem="urg-TF-Y3G" firstAttribute="bottom" secondItem="z9L-g1-fpn" secondAttribute="bottom" id="twL-3Q-vsG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="urg-TF-Y3G"/>
+                    </view>
+                    <connections>
+                        <outlet property="journeyTableView" destination="z9L-g1-fpn" id="P5P-BA-Wne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tEl-3S-74G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613.5999999999999" y="133.5832083958021"/>
+        </scene>
+        <!--Ticket Detail View Controller-->
+        <scene sceneID="wDS-Nc-UdH">
+            <objects>
+                <viewController id="ajF-oB-9ND" customClass="TicketDetailViewController" customModule="TripCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9a-rD-Ddy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axg-Ae-ga5">
+                                <rect key="frame" x="10" y="104" width="355" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="axg-Ae-ga5" firstAttribute="leading" secondItem="8IC-sZ-WWs" secondAttribute="leading" constant="10" id="TtZ-oc-0Dj"/>
+                            <constraint firstItem="axg-Ae-ga5" firstAttribute="top" secondItem="8IC-sZ-WWs" secondAttribute="top" constant="40" id="fXo-pc-Hnv"/>
+                            <constraint firstItem="8IC-sZ-WWs" firstAttribute="trailing" secondItem="axg-Ae-ga5" secondAttribute="trailing" constant="10" id="sqW-qD-n9x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8IC-sZ-WWs"/>
+                    </view>
+                    <connections>
+                        <outlet property="ticketDetailLabel" destination="axg-Ae-ga5" id="3Ic-Qa-ssM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="px5-lG-Drm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="793"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wxu-lc-U3n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yU1-yx-17V" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3AO-R8-qdL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9Xw-Mc-4sf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMf-os-cZU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="792.95352323838085"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bar_button_sort" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		966CDA34219038C3004CC11B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA33219038C3004CC11B /* AppDelegate.swift */; };
+		966CDA36219038C3004CC11B /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA35219038C3004CC11B /* CardsViewController.swift */; };
+		966CDA39219038C3004CC11B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966CDA37219038C3004CC11B /* Main.storyboard */; };
+		966CDA3B219038C6004CC11B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966CDA3A219038C6004CC11B /* Assets.xcassets */; };
+		966CDA3E219038C6004CC11B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966CDA3C219038C6004CC11B /* LaunchScreen.storyboard */; };
+		966CDA49219038C6004CC11B /* TripCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA48219038C6004CC11B /* TripCardsTests.swift */; };
+		966CDA572190393D004CC11B /* Plane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA562190393D004CC11B /* Plane.swift */; };
+		966CDA5921903946004CC11B /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA5821903946004CC11B /* Bus.swift */; };
+		966CDA5B2190394F004CC11B /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA5A2190394F004CC11B /* Train.swift */; };
+		966CDA5F21903DA1004CC11B /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA5E21903DA1004CC11B /* Card.swift */; };
+		966CDA6121903F1D004CC11B /* TicketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA6021903F1D004CC11B /* TicketTableViewCell.swift */; };
+		966CDA6321904113004CC11B /* CVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA6221904113004CC11B /* CVC-Extension+TableViewDelegate.swift */; };
+		966CDA652190412A004CC11B /* CVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA642190412A004CC11B /* CVC-Extension+TableViewDataSource.swift */; };
+		966CDA67219044EC004CC11B /* TicketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA66219044EC004CC11B /* TicketDetailViewController.swift */; };
+		966CDA69219049A2004CC11B /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA68219049A2004CC11B /* JourneyViewController.swift */; };
+		966CDA6B21904A38004CC11B /* JourneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA6A21904A38004CC11B /* JourneyTableViewCell.swift */; };
+		966CDA6D21904AB0004CC11B /* JVC-Extension+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA6C21904AB0004CC11B /* JVC-Extension+TableViewDelegate.swift */; };
+		966CDA6F21904ABF004CC11B /* JVC-Extension+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA6E21904ABF004CC11B /* JVC-Extension+TableViewDataSource.swift */; };
+		966CDA7121904FD1004CC11B /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA7021904FD1004CC11B /* CardViewModel.swift */; };
+		966CDA7321907F78004CC11B /* TripSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966CDA7221907F78004CC11B /* TripSorter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		966CDA45219038C6004CC11B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 966CDA28219038C3004CC11B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 966CDA2F219038C3004CC11B;
+			remoteInfo = TripCards;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		966CDA30219038C3004CC11B /* TripCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		966CDA33219038C3004CC11B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		966CDA35219038C3004CC11B /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		966CDA38219038C3004CC11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		966CDA3A219038C6004CC11B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		966CDA3D219038C6004CC11B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		966CDA3F219038C6004CC11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966CDA44219038C6004CC11B /* TripCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		966CDA48219038C6004CC11B /* TripCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCardsTests.swift; sourceTree = "<group>"; };
+		966CDA4A219038C6004CC11B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966CDA562190393D004CC11B /* Plane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plane.swift; sourceTree = "<group>"; };
+		966CDA5821903946004CC11B /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		966CDA5A2190394F004CC11B /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		966CDA5E21903DA1004CC11B /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		966CDA6021903F1D004CC11B /* TicketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketTableViewCell.swift; sourceTree = "<group>"; };
+		966CDA6221904113004CC11B /* CVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		966CDA642190412A004CC11B /* CVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		966CDA66219044EC004CC11B /* TicketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDetailViewController.swift; sourceTree = "<group>"; };
+		966CDA68219049A2004CC11B /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		966CDA6A21904A38004CC11B /* JourneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyTableViewCell.swift; sourceTree = "<group>"; };
+		966CDA6C21904AB0004CC11B /* JVC-Extension+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JVC-Extension+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		966CDA6E21904ABF004CC11B /* JVC-Extension+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JVC-Extension+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		966CDA7021904FD1004CC11B /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		966CDA7221907F78004CC11B /* TripSorter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSorter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		966CDA2D219038C3004CC11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966CDA41219038C6004CC11B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		966CDA27219038C3004CC11B = {
+			isa = PBXGroup;
+			children = (
+				966CDA32219038C3004CC11B /* TripCards */,
+				966CDA47219038C6004CC11B /* TripCardsTests */,
+				966CDA31219038C3004CC11B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		966CDA31219038C3004CC11B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA30219038C3004CC11B /* TripCards.app */,
+				966CDA44219038C6004CC11B /* TripCardsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		966CDA32219038C3004CC11B /* TripCards */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA7721918BC5004CC11B /* View Model */,
+				966CDA7621918BB4004CC11B /* View */,
+				966CDA7421918ADB004CC11B /* Table View Cells */,
+				966CDA5D21903D92004CC11B /* Model */,
+				966CDA5C21903D45004CC11B /* Controllers */,
+				966CDA5521903932004CC11B /* Transportation */,
+				966CDA33219038C3004CC11B /* AppDelegate.swift */,
+				966CDA3A219038C6004CC11B /* Assets.xcassets */,
+				966CDA3F219038C6004CC11B /* Info.plist */,
+				966CDA7221907F78004CC11B /* TripSorter.swift */,
+			);
+			path = TripCards;
+			sourceTree = "<group>";
+		};
+		966CDA47219038C6004CC11B /* TripCardsTests */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA48219038C6004CC11B /* TripCardsTests.swift */,
+				966CDA4A219038C6004CC11B /* Info.plist */,
+			);
+			path = TripCardsTests;
+			sourceTree = "<group>";
+		};
+		966CDA5521903932004CC11B /* Transportation */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA562190393D004CC11B /* Plane.swift */,
+				966CDA5821903946004CC11B /* Bus.swift */,
+				966CDA5A2190394F004CC11B /* Train.swift */,
+			);
+			path = Transportation;
+			sourceTree = "<group>";
+		};
+		966CDA5C21903D45004CC11B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA35219038C3004CC11B /* CardsViewController.swift */,
+				966CDA6221904113004CC11B /* CVC-Extension+TableViewDelegate.swift */,
+				966CDA642190412A004CC11B /* CVC-Extension+TableViewDataSource.swift */,
+				966CDA66219044EC004CC11B /* TicketDetailViewController.swift */,
+				966CDA68219049A2004CC11B /* JourneyViewController.swift */,
+				966CDA6C21904AB0004CC11B /* JVC-Extension+TableViewDelegate.swift */,
+				966CDA6E21904ABF004CC11B /* JVC-Extension+TableViewDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		966CDA5D21903D92004CC11B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA5E21903DA1004CC11B /* Card.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		966CDA7421918ADB004CC11B /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA6A21904A38004CC11B /* JourneyTableViewCell.swift */,
+				966CDA6021903F1D004CC11B /* TicketTableViewCell.swift */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		966CDA7621918BB4004CC11B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA37219038C3004CC11B /* Main.storyboard */,
+				966CDA3C219038C6004CC11B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		966CDA7721918BC5004CC11B /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				966CDA7021904FD1004CC11B /* CardViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		966CDA2F219038C3004CC11B /* TripCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966CDA4D219038C6004CC11B /* Build configuration list for PBXNativeTarget "TripCards" */;
+			buildPhases = (
+				966CDA2C219038C3004CC11B /* Sources */,
+				966CDA2D219038C3004CC11B /* Frameworks */,
+				966CDA2E219038C3004CC11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TripCards;
+			productName = TripCards;
+			productReference = 966CDA30219038C3004CC11B /* TripCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+		966CDA43219038C6004CC11B /* TripCardsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966CDA50219038C6004CC11B /* Build configuration list for PBXNativeTarget "TripCardsTests" */;
+			buildPhases = (
+				966CDA40219038C6004CC11B /* Sources */,
+				966CDA41219038C6004CC11B /* Frameworks */,
+				966CDA42219038C6004CC11B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				966CDA46219038C6004CC11B /* PBXTargetDependency */,
+			);
+			name = TripCardsTests;
+			productName = TripCardsTests;
+			productReference = 966CDA44219038C6004CC11B /* TripCardsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		966CDA28219038C3004CC11B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Razvan Ifteme";
+				TargetAttributes = {
+					966CDA2F219038C3004CC11B = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					966CDA43219038C6004CC11B = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 966CDA2F219038C3004CC11B;
+					};
+				};
+			};
+			buildConfigurationList = 966CDA2B219038C3004CC11B /* Build configuration list for PBXProject "TripCards" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 966CDA27219038C3004CC11B;
+			productRefGroup = 966CDA31219038C3004CC11B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				966CDA2F219038C3004CC11B /* TripCards */,
+				966CDA43219038C6004CC11B /* TripCardsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		966CDA2E219038C3004CC11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966CDA3E219038C6004CC11B /* LaunchScreen.storyboard in Resources */,
+				966CDA3B219038C6004CC11B /* Assets.xcassets in Resources */,
+				966CDA39219038C3004CC11B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966CDA42219038C6004CC11B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		966CDA2C219038C3004CC11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966CDA36219038C3004CC11B /* CardsViewController.swift in Sources */,
+				966CDA34219038C3004CC11B /* AppDelegate.swift in Sources */,
+				966CDA6321904113004CC11B /* CVC-Extension+TableViewDelegate.swift in Sources */,
+				966CDA5F21903DA1004CC11B /* Card.swift in Sources */,
+				966CDA6D21904AB0004CC11B /* JVC-Extension+TableViewDelegate.swift in Sources */,
+				966CDA6B21904A38004CC11B /* JourneyTableViewCell.swift in Sources */,
+				966CDA6F21904ABF004CC11B /* JVC-Extension+TableViewDataSource.swift in Sources */,
+				966CDA67219044EC004CC11B /* TicketDetailViewController.swift in Sources */,
+				966CDA6121903F1D004CC11B /* TicketTableViewCell.swift in Sources */,
+				966CDA7321907F78004CC11B /* TripSorter.swift in Sources */,
+				966CDA572190393D004CC11B /* Plane.swift in Sources */,
+				966CDA652190412A004CC11B /* CVC-Extension+TableViewDataSource.swift in Sources */,
+				966CDA5B2190394F004CC11B /* Train.swift in Sources */,
+				966CDA69219049A2004CC11B /* JourneyViewController.swift in Sources */,
+				966CDA5921903946004CC11B /* Bus.swift in Sources */,
+				966CDA7121904FD1004CC11B /* CardViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		966CDA40219038C6004CC11B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966CDA49219038C6004CC11B /* TripCardsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		966CDA46219038C6004CC11B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 966CDA2F219038C3004CC11B /* TripCards */;
+			targetProxy = 966CDA45219038C6004CC11B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		966CDA37219038C3004CC11B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966CDA38219038C3004CC11B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		966CDA3C219038C6004CC11B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966CDA3D219038C6004CC11B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		966CDA4B219038C6004CC11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		966CDA4C219038C6004CC11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		966CDA4E219038C6004CC11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZT7V9MXAA;
+				INFOPLIST_FILE = TripCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Razvan.TripCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		966CDA4F219038C6004CC11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZT7V9MXAA;
+				INFOPLIST_FILE = TripCards/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Razvan.TripCards;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		966CDA51219038C6004CC11B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZT7V9MXAA;
+				INFOPLIST_FILE = TripCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Razvan.TripCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripCards.app/TripCards";
+			};
+			name = Debug;
+		};
+		966CDA52219038C6004CC11B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3ZT7V9MXAA;
+				INFOPLIST_FILE = TripCardsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Razvan.TripCardsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TripCards.app/TripCards";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		966CDA2B219038C3004CC11B /* Build configuration list for PBXProject "TripCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966CDA4B219038C6004CC11B /* Debug */,
+				966CDA4C219038C6004CC11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966CDA4D219038C6004CC11B /* Build configuration list for PBXNativeTarget "TripCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966CDA4E219038C6004CC11B /* Debug */,
+				966CDA4F219038C6004CC11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966CDA50219038C6004CC11B /* Build configuration list for PBXNativeTarget "TripCardsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966CDA51219038C6004CC11B /* Debug */,
+				966CDA52219038C6004CC11B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 966CDA28219038C3004CC11B /* Project object */;
+}
